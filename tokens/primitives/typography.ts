@@ -10,7 +10,7 @@
  * Primitives for font family variables
  */
 export const fontFamilies = {
-  cerapro: "'Cera Pro', sans-serif",
+  cera: "'Cera Pro', sans-serif",
   manrope: "'Manrope', sans-serif",
   recoleta: "'Recoleta', serif",
   gratimoClassic: "'Gratimo Classic', serif",

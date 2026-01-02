@@ -21,21 +21,21 @@ export const typography = {
   // Body text styles
   body: {
     sm: {
-      fontFamily: fontFamilies.cerapro,
+      fontFamily: fontFamilies.cera,
       fontSize: fontSizes.sm,
       fontWeight: fontWeights.regular,
       lineHeight: lineHeights.normal,
       letterSpacing: letterSpacing.normal,
     },
     base: {
-      fontFamily: fontFamilies.cerapro,
+      fontFamily: fontFamilies.cera,
       fontSize: fontSizes.base,
       fontWeight: fontWeights.regular,
       lineHeight: lineHeights.normal,
       letterSpacing: letterSpacing.normal,
     },
     lg: {
-      fontFamily: fontFamilies.cerapro,
+      fontFamily: fontFamilies.cera,
       fontSize: fontSizes.lg,
       fontWeight: fontWeights.regular,
       lineHeight: lineHeights.normal,
@@ -90,14 +90,14 @@ export const typography = {
   // Label/Caption styles
   label: {
     sm: {
-      fontFamily: fontFamilies.cerapro,
+      fontFamily: fontFamilies.cera,
       fontSize: fontSizes.xs,
       fontWeight: fontWeights.medium,
       lineHeight: lineHeights.normal,
       letterSpacing: letterSpacing.wide,
     },
     base: {
-      fontFamily: fontFamilies.cerapro,
+      fontFamily: fontFamilies.cera,
       fontSize: fontSizes.sm,
       fontWeight: fontWeights.medium,
       lineHeight: lineHeights.normal,

@@ -123,7 +123,7 @@ Typography values including font families, sizes, weights, line heights, and let
 ```
 
 **Observed Values (from Figma):**
-- `--font.family.cerapro` - Cera Pro font family
+- `--font.family.cera` - Cera Pro font family
 - `--font.weight.bold` - Bold weight
 - `--font.weight.regular` - Regular weight
 - `--text.sm` - Small text size (14px)
