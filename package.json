@@ -1,0 +1,39 @@
+{
+  "name": "calyxe-ds",
+  "version": "2.0.0",
+  "description": "Calyxe Design System - Design tokens and components",
+  "type": "module",
+  "main": "./tokens/index.ts",
+  "types": "./tokens/index.ts",
+  "exports": {
+    ".": {
+      "types": "./tokens/index.ts",
+      "import": "./tokens/index.ts"
+    },
+    "./tokens": {
+      "types": "./tokens/index.ts",
+      "import": "./tokens/index.ts"
+    },
+    "./css": "./tokens/css-variables.css"
+  },
+  "files": [
+    "tokens",
+    "README.md"
+  ],
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "calyxe",
+    "react",
+    "components"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
+

@@ -1,0 +1,329 @@
+/**
+ * CSS Variables for Design Tokens
+ * 
+ * This file generates CSS custom properties (variables) from the design tokens.
+ * These can be used directly in CSS or imported into your application.
+ * 
+ * Usage in CSS:
+ *   background-color: var(--color-bg-neutral-default);
+ *   color: var(--color-fg-success-light);
+ *   border-color: var(--color-border-light);
+ *   spacing: var(--spacing-md);
+ *   border-radius: var(--border-rounded-md);
+ */
+
+:root {
+  /* ============================================
+     PRIMITIVE COLORS
+     ============================================ */
+
+  /* Gray - Neutral grayscale and Primary brand palette */
+  --color-gray-50: oklch(100.00% 0.000 0);
+  --color-gray-100: oklch(0.985 0.005 308.445);
+  --color-gray-200: oklch(0.97 0.005 308.445);
+  --color-gray-300: oklch(0.922 0.005 308.445);
+  --color-gray-400: oklch(0.87 0.005 308.445);
+  --color-gray-500: oklch(0.708 0.005 308.445);
+  --color-gray-600: oklch(0.556 0.005 308.445);
+  --color-gray-700: oklch(0.439 0.005 308.445);
+  --color-gray-800: oklch(0.269 0.005 308.445);
+  --color-gray-900: oklch(0.205 0.005 308.445);
+  --color-gray-950: oklch(0.142 0.005 308.445);
+
+  /* Purple - Secondary brand color */
+  --color-purple-50: oklch(0.956 0.02 279.336);
+  --color-purple-100: oklch(0.919 0.038 279.336);
+  --color-purple-200: oklch(0.849 0.073 279.336);
+  --color-purple-300: oklch(0.744 0.134 279.336);
+  --color-purple-400: oklch(0.641 0.207 279.336);
+  --color-purple-500: oklch(0.555 0.267 279.336);
+  --color-purple-600: oklch(0.489 0.297 279.336);
+  --color-purple-700: oklch(0.44 0.279 279.336);
+  --color-purple-800: oklch(0.385 0.235 279.336);
+  --color-purple-900: oklch(0.344 0.185 279.336);
+  --color-purple-950: oklch(0.25 0.129 279.336);
+
+  /* Orange - Warning color */
+  --color-orange-50: oklch(0.972 0.012 34.302);
+  --color-orange-100: oklch(0.942 0.027 34.302);
+  --color-orange-200: oklch(0.896 0.053 34.302);
+  --color-orange-300: oklch(0.822 0.101 34.302);
+  --color-orange-400: oklch(0.719 0.169 34.302);
+  --color-orange-500: oklch(0.651 0.211 34.302);
+  --color-orange-600: oklch(0.59 0.218 34.302);
+  --color-orange-700: oklch(0.517 0.19 34.302);
+  --color-orange-800: oklch(0.456 0.159 34.302);
+  --color-orange-900: oklch(0.408 0.13 34.302);
+  --color-orange-950: oklch(0.25 0.129 279.336);
+
+  /* Red - Error/destructive color */
+  --color-red-50: oklch(0.967 0.015 20.186);
+  --color-red-100: oklch(0.932 0.033 20.186);
+  --color-red-200: oklch(0.876 0.064 20.186);
+  --color-red-300: oklch(0.788 0.123 20.186);
+  --color-red-400: oklch(0.69 0.202 20.186);
+  --color-red-500: oklch(0.624 0.251 20.186);
+  --color-red-600: oklch(0.566 0.258 20.186);
+  --color-red-700: oklch(0.496 0.227 20.186);
+  --color-red-800: oklch(0.437 0.191 20.186);
+  --color-red-900: oklch(0.392 0.157 20.186);
+  --color-red-950: oklch(0.257 0.104 20.186);
+
+  /* Green - Success/positive color */
+  --color-green-50: oklch(0.989 0.019 149.107);
+  --color-green-100: oklch(0.959 0.071 155.704);
+  --color-green-200: oklch(0.951 0.087 149.107);
+  --color-green-300: oklch(0.917 0.147 149.107);
+  --color-green-400: oklch(0.833 0.197 149.107);
+  --color-green-500: oklch(0.759 0.201 149.107);
+  --color-green-600: oklch(0.655 0.176 149.107);
+  --color-green-700: oklch(0.554 0.141 149.107);
+  --color-green-800: oklch(0.471 0.11 149.107);
+  --color-green-900: oklch(0.413 0.088 149.107);
+  --color-green-950: oklch(0.282 0.06 149.107);
+
+  /* Blue - Informational color */
+  --color-blue-50: oklch(0.965 0.016 263.704);
+  --color-blue-100: oklch(0.935 0.031 263.704);
+  --color-blue-200: oklch(0.876 0.059 263.704);
+  --color-blue-300: oklch(0.793 0.104 263.704);
+  --color-blue-400: oklch(0.672 0.164 263.704);
+  --color-blue-500: oklch(0.759 0.201 149.107);
+  --color-blue-600: oklch(0.495 0.231 263.704);
+  --color-blue-700: oklch(0.438 0.213 263.704);
+  --color-blue-800: oklch(0.373 0.175 263.704);
+  --color-blue-900: oklch(0.329 0.132 263.704);
+  --color-blue-950: oklch(0.232 0.086 263.704);
+
+  /* Cyan - Highlight color */
+  --color-cyan-50: oklch(0.981 0.02 211.649);
+  --color-cyan-100: oklch(0.947 0.048 211.649);
+  --color-cyan-200: oklch(0.901 0.085 211.649);
+  --color-cyan-300: oklch(0.85 0.134 211.649);
+  --color-cyan-400: oklch(0.775 0.162 211.649);
+  --color-cyan-500: oklch(0.702 0.15 211.649);
+  --color-cyan-600: oklch(0.598 0.133 211.649);
+  --color-cyan-700: oklch(0.511 0.111 211.649);
+  --color-cyan-800: oklch(0.442 0.091 211.649);
+  --color-cyan-900: oklch(0.391 0.075 211.649);
+  --color-cyan-950: oklch(0.297 0.06 211.649);
+
+  /* Alpha Values - Black overlays (Light theme) */
+  --color-alpha-black-4: oklch(0.142 0.005 308.445 / 0.04);
+  --color-alpha-black-8: oklch(0.142 0.005 308.445 / 0.08);
+  --color-alpha-black-10: oklch(0.142 0.005 308.445 / 0.10);
+  --color-alpha-black-12: oklch(0.142 0.005 308.445 / 0.12);
+  --color-alpha-black-16: oklch(0.142 0.005 308.445 / 0.16);
+
+  /* Alpha Values - White overlays (Dark theme) */
+  --color-alpha-white-4: oklch(100.00% 0.000 0 / 0.04);
+  --color-alpha-white-8: oklch(100.00% 0.000 0 / 0.08);
+  --color-alpha-white-10: oklch(100.00% 0.000 0 / 0.10);
+  --color-alpha-white-12: oklch(100.00% 0.000 0 / 0.12);
+  --color-alpha-white-16: oklch(100.00% 0.000 0 / 0.16);
+
+  /* ============================================
+     PRIMITIVE SPACING
+     ============================================ */
+
+  --spacing-xs: 0.5rem;    /* 8px */
+  --spacing-sm: 0.75rem;   /* 12px */
+  --spacing-md: 1rem;      /* 16px */
+  --spacing-lg: 1.5rem;    /* 24px */
+  --spacing-xl: 2rem;      /* 32px */
+  --spacing-2xl: 2.5rem;   /* 40px */
+  --spacing-3xl: 3rem;     /* 48px */
+  --spacing-4xl: 4rem;     /* 64px */
+
+  /* ============================================
+     PRIMITIVE SIZE
+     ============================================ */
+
+  --size-4: 0.25rem;  /* 4px */
+  --size-8: 0.5rem;   /* 8px */
+  --size-12: 0.75rem; /* 12px */
+  --size-16: 1rem;    /* 16px */
+  --size-24: 1.5rem;  /* 24px */
+  --size-32: 2rem;    /* 32px */
+  --size-40: 2.5rem;  /* 40px */
+  --size-48: 3rem;    /* 48px */
+  --size-64: 4rem;    /* 64px */
+
+  /* ============================================
+     PRIMITIVE BORDER RADIUS
+     ============================================ */
+
+  --border-rounded-none: 0;
+  --border-rounded-2xs: var(--size-4);  /* 0.25rem / 4px */
+  --border-rounded-xs: var(--size-8);    /* 0.5rem / 8px */
+  --border-rounded-sm: var(--size-12);  /* 0.75rem / 12px */
+  --border-rounded-md: var(--size-16);   /* 1rem / 16px */
+  --border-rounded-lg: var(--size-24);   /* 1.5rem / 24px */
+  --border-rounded-xl: var(--size-32);   /* 2rem / 32px */
+  --border-rounded-full: 9999px;         /* Fully rounded/pill shape - keep as px for maximum rounding */
+
+  /* ============================================
+     PRIMITIVE TYPOGRAPHY
+     ============================================ */
+
+  /* Font Families */
+  --font-family-cerapro: 'Cera Pro', sans-serif;
+  --font-family-manrope: 'Manrope', sans-serif;
+  --font-family-recoleta: 'Recoleta', serif;
+  --font-family-gratimo-classic: 'Gratimo Classic', serif;
+  --font-family-untitled-sans: 'Untitled Sans', sans-serif;
+
+  /* Font Sizes */
+  --font-size-xs: 0.75rem;   /* 12px */
+  --font-size-sm: 0.875rem;  /* 14px */
+  --font-size-base: 1rem;    /* 16px */
+  --font-size-lg: 1.125rem;  /* 18px */
+  --font-size-xl: 1.25rem;   /* 20px */
+  --font-size-2xl: 1.5rem;   /* 24px */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2.25rem;  /* 36px */
+  --font-size-5xl: 3rem;     /* 48px */
+
+  /* Font Weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights (unitless values) */
+  --line-height-none: 1;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+
+  /* Letter Spacing */
+  --letter-spacing-tighter: -0.05em;
+  --letter-spacing-tight: -0.025em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.025em;
+  --letter-spacing-wider: 0.05em;
+  --letter-spacing-widest: 0.1em;
+  --letter-spacing-tracking-sm: 0.0125rem; /* 0.2px */
+
+  /* ============================================
+     MAPPED COLLECTIONS - BACKGROUND
+     ============================================ */
+
+  /* Neutral Background (Primary semantic role) */
+  --color-bg-neutral-lighter: var(--color-gray-50);
+  --color-bg-neutral-light: var(--color-gray-200);
+  --color-bg-neutral-default: var(--color-gray-600);
+  --color-bg-neutral-dark: var(--color-gray-900);
+  --color-bg-neutral-darker: var(--color-gray-950);
+
+  /* White Background */
+  --color-bg-white: #ffffff;
+
+  /* Primary Background (alias for neutral - backward compatibility) */
+  --color-bg-primary-lighter: var(--color-gray-50);
+  --color-bg-primary-light: var(--color-gray-200);
+  --color-bg-primary-default: var(--color-gray-600);
+  --color-bg-primary-dark: var(--color-gray-900);
+  --color-bg-primary-darker: var(--color-gray-950);
+
+  /* Secondary Background */
+  --color-bg-secondary-lighter: var(--color-purple-50);
+  --color-bg-secondary-light: var(--color-purple-100);
+  --color-bg-secondary-default: var(--color-purple-500);
+  --color-bg-secondary-dark: var(--color-purple-900);
+  --color-bg-secondary-darker: var(--color-purple-950);
+
+  /* Highlight Background */
+  --color-bg-highlight-lighter: var(--color-cyan-50);
+  --color-bg-highlight-light: var(--color-cyan-100);
+  --color-bg-highlight-default: var(--color-cyan-700);
+  --color-bg-highlight-dark: var(--color-cyan-900);
+  --color-bg-highlight-darker: var(--color-cyan-950);
+
+  /* Success Background */
+  --color-bg-success-lighter: var(--color-green-50);
+  --color-bg-success-light: var(--color-green-100);
+  --color-bg-success-default: var(--color-green-700);
+  --color-bg-success-dark: var(--color-green-900);
+  --color-bg-success-darker: var(--color-green-950);
+
+  /* Warning Background */
+  --color-bg-warning-lighter: var(--color-orange-50);
+  --color-bg-warning-light: var(--color-orange-100);
+  --color-bg-warning-default: var(--color-orange-600);
+  --color-bg-warning-dark: var(--color-orange-900);
+  --color-bg-warning-darker: var(--color-orange-950);
+
+  /* Error Background */
+  --color-bg-error-lighter: var(--color-red-50);
+  --color-bg-error-light: var(--color-red-100);
+  --color-bg-error-default: var(--color-red-600);
+  --color-bg-error-dark: var(--color-red-900);
+  --color-bg-error-darker: var(--color-red-950);
+
+  /* ============================================
+     MAPPED COLLECTIONS - FOREGROUND
+     ============================================ */
+
+  /* Neutral Foreground (Primary semantic role) */
+  --color-fg-neutral-lighter: var(--color-gray-50);
+  --color-fg-neutral-light: var(--color-gray-200);
+  --color-fg-neutral-default: var(--color-gray-600);
+  --color-fg-neutral-dark: var(--color-gray-900);
+  --color-fg-neutral-darker: var(--color-gray-950);
+
+  /* Primary Foreground (alias for neutral - backward compatibility) */
+  --color-fg-primary-lighter: var(--color-gray-50);
+  --color-fg-primary-light: var(--color-gray-200);
+  --color-fg-primary-default: var(--color-gray-600);
+  --color-fg-primary-dark: var(--color-gray-900);
+  --color-fg-primary-darker: var(--color-gray-950);
+
+  /* Secondary Foreground */
+  --color-fg-secondary-lighter: var(--color-purple-50);
+  --color-fg-secondary-light: var(--color-purple-100);
+  --color-fg-secondary-default: var(--color-purple-500);
+  --color-fg-secondary-dark: var(--color-purple-900);
+  --color-fg-secondary-darker: var(--color-purple-950);
+
+  /* Highlight Foreground */
+  --color-fg-highlight-lighter: var(--color-cyan-50);
+  --color-fg-highlight-light: var(--color-cyan-100);
+  --color-fg-highlight-default: var(--color-cyan-700);
+  --color-fg-highlight-dark: var(--color-cyan-900);
+  --color-fg-highlight-darker: var(--color-cyan-950);
+
+  /* Success Foreground */
+  --color-fg-success-lighter: var(--color-green-50);
+  --color-fg-success-light: var(--color-green-100);
+  --color-fg-success-default: var(--color-green-700);
+  --color-fg-success-dark: var(--color-green-900);
+  --color-fg-success-darker: var(--color-green-950);
+
+  /* Warning Foreground */
+  --color-fg-warning-lighter: var(--color-orange-50);
+  --color-fg-warning-light: var(--color-orange-100);
+  --color-fg-warning-default: var(--color-orange-600);
+  --color-fg-warning-dark: var(--color-orange-900);
+  --color-fg-warning-darker: var(--color-orange-950);
+
+  /* Error Foreground */
+  --color-fg-error-lighter: var(--color-red-50);
+  --color-fg-error-light: var(--color-red-100);
+  --color-fg-error-default: var(--color-red-600);
+  --color-fg-error-dark: var(--color-red-900);
+  --color-fg-error-darker: var(--color-red-950);
+
+  /* ============================================
+     MAPPED COLLECTIONS - BORDER
+     ============================================ */
+
+  /* Border Colors */
+  --color-border-light: var(--color-gray-200);
+  --color-border-default: var(--color-gray-300);
+  --color-border-dark: var(--color-gray-400);
+
+  /* Primary Border (alias - backward compatibility) */
+  --color-border-primary-light: var(--color-gray-200);
+  --color-border-primary-default: var(--color-gray-300);
+  --color-border-primary-dark: var(--color-gray-400);
+}
