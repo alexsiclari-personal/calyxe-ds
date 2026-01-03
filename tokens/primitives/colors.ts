@@ -45,7 +45,7 @@ export const colorPrimitives = {
     700: 'oklch(0.517 0.19 34.302)',
     800: 'oklch(0.456 0.159 34.302)',
     900: 'oklch(0.408 0.13 34.302)',
-    950: 'oklch(0.25 0.129 279.336)', // Note: This appears to be a copy-paste error in Figma, should be orange hue
+    950: 'oklch(0.268 0.086 34.528)',
   },
   red: {
     50: 'oklch(0.967 0.015 20.186)',
@@ -79,7 +79,7 @@ export const colorPrimitives = {
     200: 'oklch(0.876 0.059 263.704)',
     300: 'oklch(0.793 0.104 263.704)',
     400: 'oklch(0.672 0.164 263.704)',
-    500: 'oklch(0.759 0.201 149.107)', // Note: This appears to be a copy-paste error in Figma, should be blue hue
+    500: 'oklch(0.575 0.208 263.564)',
     600: 'oklch(0.495 0.231 263.704)',
     700: 'oklch(0.438 0.213 263.704)',
     800: 'oklch(0.373 0.175 263.704)',
